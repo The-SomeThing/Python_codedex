@@ -1,0 +1,12 @@
+# Letter to Self
+print("+--------------------------------------------------------------------------------------------------------------+")
+print("|                                                                                                    29/07/2023|")
+print("| Dear George,                                                                                                 |")
+print("|    Currently tired, want to make progress but seems like there's a mountain ahead                            |")
+print("|    Learn enough to make something myself                                                                     |")
+print("|    Good thing you made all those mistakes                                                                    |")
+print("|    Well I'm writing this on windows so not sure how to insert an emoji                                       |")
+print("|                                                                                                              |")
+print("|                                                                            George                            |")
+print("|                                                                                                              |")
+print("+--------------------------------------------------------------------------------------------------------------+")
