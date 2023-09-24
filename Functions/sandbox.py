@@ -1,9 +1,9 @@
 #### Playground to test thing before throwing it into a programme
 
-list1 = ["George", "Nati", "Antti"]
+def go_fuck(x):
+    val1 = x + 1
+    return val1
 
-item1 = input("What do you want? ")
-if item1 in list1:
-    print("success")
-else:
-    print("this will never work.")
+print(go_fuck(1000))
+print(go_fuck(10))
+print(go_fuck(11))

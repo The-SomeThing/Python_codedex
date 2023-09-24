@@ -1,53 +1,41 @@
 #### Drive thru
 
-import random
-
-welc_men_accept = ["y", "yes"]
-welc_men_deny   = ["n", "no"]
-
-basket = []
-
 w_menu = ["Fries",
           "Cheese Sticks",
           "McFlurry",
           "McWrap"]
 
 
-main_menu = ["3 Chicken McNuggets",
+m_menu = ["3 Chicken McNuggets",
              "6 Chicken McNuggets",
              "9 Chicken McNuggets",
              "Big Mac",
              "The McRib",
              "The McPlant"]
 
-# Select from Welcome menu
-def welcome_item_select():
-    global basket
-    item1 = input("Which item would you like?\n> ").lower
-    if item1 in w_menu:
-        basket.append(item1)
+basket = []
+
+def welcome_menu(x):
+    item = w_menu[x - 1]
+    basket.append(item)
+    print("Your Order: ", basket)
+
+def main_menu(x):
+    item = m_menu[x - 1]
+    basket.append(item)
+    print("Your Order: ", basket)
 
 
-# Welcome Menu List
-def welcome_men():
-    for i in w_menu:
-        print(i)
-    menu_option = input("Would you like something from the Welcome Menu?\n> ")
-    if menu_option in welc_men_accept:
-        welcome_item_select()
-    if menu_option in welc_men_deny:
-        get_item()
+print("\nWelcome to McDonalds!\n")
+print(*w_menu, sep = ", ")
 
 
-# Select from main menu
-def get_item():
-    menu_option = input("Would you like something from the Main Menu?\n> ")
+welcome_menu(x = int(input("\nWhat d'ya want?\n> ")))
+
+print("\nHere's our main menu!\n")
+print(*m_menu, sep = ", ")
+
+main_menu(x = int(input("\nWhat d'ya want?\n> ")))
 
 
-
-
-# Show Welcome menu
-welcome_men()
-
-
-print(basket)
+print("\nYour Order: ", *basket)
